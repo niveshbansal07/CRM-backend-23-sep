@@ -1,0 +1,29 @@
+{
+  "name": "trackfield-crm-backend",
+  "version": "1.0.0",
+  "description": "Production-ready backend starter for TrackField CRM",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "audit:phase9": "node scripts/phase9-readiness-audit.js",
+    "dev": "node src/server.js",
+    "dev:watch": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "seed:crm": "node scripts/seed-crm.js"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
